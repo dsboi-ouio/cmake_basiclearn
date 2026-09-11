@@ -1,0 +1,3 @@
+/home/dsboi-ouio/projects/cmake_basiclearn/build/CMakeFiles/cmake_basiclearn_1.dir
+/home/dsboi-ouio/projects/cmake_basiclearn/build/CMakeFiles/edit_cache.dir
+/home/dsboi-ouio/projects/cmake_basiclearn/build/CMakeFiles/rebuild_cache.dir
