@@ -1,4 +1,0 @@
-/home/dsboi-ouio/projects/cmake_basiclearn/build/CMakeFiles/TOOLS_STATIC.dir
-/home/dsboi-ouio/projects/cmake_basiclearn/build/CMakeFiles/cmake_basiclearn_2.dir
-/home/dsboi-ouio/projects/cmake_basiclearn/build/CMakeFiles/edit_cache.dir
-/home/dsboi-ouio/projects/cmake_basiclearn/build/CMakeFiles/rebuild_cache.dir
