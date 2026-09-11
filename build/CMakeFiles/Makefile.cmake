@@ -44,5 +44,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/cmake_basiclearn_1.dir/DependInfo.cmake"
+  "CMakeFiles/TOOLS_STATIC.dir/DependInfo.cmake"
+  "CMakeFiles/cmake_basiclearn_2.dir/DependInfo.cmake"
   )

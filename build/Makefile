@@ -117,24 +117,37 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named cmake_basiclearn_1
+# Target rules for targets named TOOLS_STATIC
 
 # Build rule for target.
-cmake_basiclearn_1: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cmake_basiclearn_1
-.PHONY : cmake_basiclearn_1
+TOOLS_STATIC: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TOOLS_STATIC
+.PHONY : TOOLS_STATIC
 
 # fast build rule for target.
-cmake_basiclearn_1/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_basiclearn_1.dir/build.make CMakeFiles/cmake_basiclearn_1.dir/build
-.PHONY : cmake_basiclearn_1/fast
+TOOLS_STATIC/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TOOLS_STATIC.dir/build.make CMakeFiles/TOOLS_STATIC.dir/build
+.PHONY : TOOLS_STATIC/fast
+
+#=============================================================================
+# Target rules for targets named cmake_basiclearn_2
+
+# Build rule for target.
+cmake_basiclearn_2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cmake_basiclearn_2
+.PHONY : cmake_basiclearn_2
+
+# fast build rule for target.
+cmake_basiclearn_2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_basiclearn_2.dir/build.make CMakeFiles/cmake_basiclearn_2.dir/build
+.PHONY : cmake_basiclearn_2/fast
 
 src/cmake_basiclearn.o: src/cmake_basiclearn.cpp.o
 .PHONY : src/cmake_basiclearn.o
 
 # target to build an object file
 src/cmake_basiclearn.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_basiclearn_1.dir/build.make CMakeFiles/cmake_basiclearn_1.dir/src/cmake_basiclearn.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_basiclearn_2.dir/build.make CMakeFiles/cmake_basiclearn_2.dir/src/cmake_basiclearn.cpp.o
 .PHONY : src/cmake_basiclearn.cpp.o
 
 src/cmake_basiclearn.i: src/cmake_basiclearn.cpp.i
@@ -142,7 +155,7 @@ src/cmake_basiclearn.i: src/cmake_basiclearn.cpp.i
 
 # target to preprocess a source file
 src/cmake_basiclearn.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_basiclearn_1.dir/build.make CMakeFiles/cmake_basiclearn_1.dir/src/cmake_basiclearn.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_basiclearn_2.dir/build.make CMakeFiles/cmake_basiclearn_2.dir/src/cmake_basiclearn.cpp.i
 .PHONY : src/cmake_basiclearn.cpp.i
 
 src/cmake_basiclearn.s: src/cmake_basiclearn.cpp.s
@@ -150,7 +163,7 @@ src/cmake_basiclearn.s: src/cmake_basiclearn.cpp.s
 
 # target to generate assembly for a file
 src/cmake_basiclearn.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_basiclearn_1.dir/build.make CMakeFiles/cmake_basiclearn_1.dir/src/cmake_basiclearn.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_basiclearn_2.dir/build.make CMakeFiles/cmake_basiclearn_2.dir/src/cmake_basiclearn.cpp.s
 .PHONY : src/cmake_basiclearn.cpp.s
 
 tools/hello.o: tools/hello.cpp.o
@@ -158,7 +171,7 @@ tools/hello.o: tools/hello.cpp.o
 
 # target to build an object file
 tools/hello.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_basiclearn_1.dir/build.make CMakeFiles/cmake_basiclearn_1.dir/tools/hello.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TOOLS_STATIC.dir/build.make CMakeFiles/TOOLS_STATIC.dir/tools/hello.cpp.o
 .PHONY : tools/hello.cpp.o
 
 tools/hello.i: tools/hello.cpp.i
@@ -166,7 +179,7 @@ tools/hello.i: tools/hello.cpp.i
 
 # target to preprocess a source file
 tools/hello.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_basiclearn_1.dir/build.make CMakeFiles/cmake_basiclearn_1.dir/tools/hello.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TOOLS_STATIC.dir/build.make CMakeFiles/TOOLS_STATIC.dir/tools/hello.cpp.i
 .PHONY : tools/hello.cpp.i
 
 tools/hello.s: tools/hello.cpp.s
@@ -174,7 +187,7 @@ tools/hello.s: tools/hello.cpp.s
 
 # target to generate assembly for a file
 tools/hello.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_basiclearn_1.dir/build.make CMakeFiles/cmake_basiclearn_1.dir/tools/hello.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TOOLS_STATIC.dir/build.make CMakeFiles/TOOLS_STATIC.dir/tools/hello.cpp.s
 .PHONY : tools/hello.cpp.s
 
 # Help Target
@@ -185,7 +198,8 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... cmake_basiclearn_1"
+	@echo "... TOOLS_STATIC"
+	@echo "... cmake_basiclearn_2"
 	@echo "... src/cmake_basiclearn.o"
 	@echo "... src/cmake_basiclearn.i"
 	@echo "... src/cmake_basiclearn.s"

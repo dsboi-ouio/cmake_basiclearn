@@ -63,7 +63,8 @@ CMAKE_BINARY_DIR = /home/dsboi-ouio/projects/cmake_basiclearn/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/cmake_basiclearn_1.dir/all
+all: CMakeFiles/TOOLS_STATIC.dir/all
+all: CMakeFiles/cmake_basiclearn_2.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +72,61 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/cmake_basiclearn_1.dir/clean
+clean: CMakeFiles/TOOLS_STATIC.dir/clean
+clean: CMakeFiles/cmake_basiclearn_2.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/cmake_basiclearn_1.dir
+# Target rules for target CMakeFiles/TOOLS_STATIC.dir
 
 # All Build rule for target.
-CMakeFiles/cmake_basiclearn_1.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_basiclearn_1.dir/build.make CMakeFiles/cmake_basiclearn_1.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_basiclearn_1.dir/build.make CMakeFiles/cmake_basiclearn_1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/dsboi-ouio/projects/cmake_basiclearn/build/CMakeFiles --progress-num=1,2,3 "Built target cmake_basiclearn_1"
-.PHONY : CMakeFiles/cmake_basiclearn_1.dir/all
+CMakeFiles/TOOLS_STATIC.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TOOLS_STATIC.dir/build.make CMakeFiles/TOOLS_STATIC.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TOOLS_STATIC.dir/build.make CMakeFiles/TOOLS_STATIC.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/dsboi-ouio/projects/cmake_basiclearn/build/CMakeFiles --progress-num=1,2 "Built target TOOLS_STATIC"
+.PHONY : CMakeFiles/TOOLS_STATIC.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/cmake_basiclearn_1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dsboi-ouio/projects/cmake_basiclearn/build/CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/cmake_basiclearn_1.dir/all
+CMakeFiles/TOOLS_STATIC.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dsboi-ouio/projects/cmake_basiclearn/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/TOOLS_STATIC.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dsboi-ouio/projects/cmake_basiclearn/build/CMakeFiles 0
-.PHONY : CMakeFiles/cmake_basiclearn_1.dir/rule
+.PHONY : CMakeFiles/TOOLS_STATIC.dir/rule
 
 # Convenience name for target.
-cmake_basiclearn_1: CMakeFiles/cmake_basiclearn_1.dir/rule
-.PHONY : cmake_basiclearn_1
+TOOLS_STATIC: CMakeFiles/TOOLS_STATIC.dir/rule
+.PHONY : TOOLS_STATIC
 
 # clean rule for target.
-CMakeFiles/cmake_basiclearn_1.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_basiclearn_1.dir/build.make CMakeFiles/cmake_basiclearn_1.dir/clean
-.PHONY : CMakeFiles/cmake_basiclearn_1.dir/clean
+CMakeFiles/TOOLS_STATIC.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TOOLS_STATIC.dir/build.make CMakeFiles/TOOLS_STATIC.dir/clean
+.PHONY : CMakeFiles/TOOLS_STATIC.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/cmake_basiclearn_2.dir
+
+# All Build rule for target.
+CMakeFiles/cmake_basiclearn_2.dir/all: CMakeFiles/TOOLS_STATIC.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_basiclearn_2.dir/build.make CMakeFiles/cmake_basiclearn_2.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_basiclearn_2.dir/build.make CMakeFiles/cmake_basiclearn_2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/dsboi-ouio/projects/cmake_basiclearn/build/CMakeFiles --progress-num=3,4 "Built target cmake_basiclearn_2"
+.PHONY : CMakeFiles/cmake_basiclearn_2.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/cmake_basiclearn_2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dsboi-ouio/projects/cmake_basiclearn/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/cmake_basiclearn_2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dsboi-ouio/projects/cmake_basiclearn/build/CMakeFiles 0
+.PHONY : CMakeFiles/cmake_basiclearn_2.dir/rule
+
+# Convenience name for target.
+cmake_basiclearn_2: CMakeFiles/cmake_basiclearn_2.dir/rule
+.PHONY : cmake_basiclearn_2
+
+# clean rule for target.
+CMakeFiles/cmake_basiclearn_2.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_basiclearn_2.dir/build.make CMakeFiles/cmake_basiclearn_2.dir/clean
+.PHONY : CMakeFiles/cmake_basiclearn_2.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
