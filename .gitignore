@@ -23,6 +23,7 @@ compile_commands.json
 # 手动生成的可执行文件
 /cmake_basiclearn
 /cmake_basiclearn_1
+/cmake_basiclearn_2
 
 # 编辑器
 .vscode/
